@@ -2,10 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 
-#Clone the code
+## Clone the code
+
 https://github.com/venkatch668/Angluar6-CustomGrid-Filters.git
 
-#Expected output 
+## Expected output 
+
 ![Alt text](https://github.com/venkatch668/Angluar6-CustomGrid-Filters/blob/master/screenshot.JPG?raw=true  "screenshot")
 
 
@@ -38,4 +40,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 @VenkatCH
-@Any queries - plese reach me ch.venkat6698gmail.com
+@Any queries - please reach me ch.venkat669@gmail.com
