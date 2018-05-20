@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+tree-internal .tree .folding.node-collapsed:before{
+    content: "\f07b"!important;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+tree-internal .tree .folding.node-expanded:before{
+    content: "\f07c"!important;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+node-menu{
+    display: none;
+}
+.dropdown-menu{
+    position: relative;
+    top:0px!important;
+}
+.dropdown-menu button{
+    display: block;
+    width:100%;
+}
+.dropdown-toggle{
+    width:100%
+}

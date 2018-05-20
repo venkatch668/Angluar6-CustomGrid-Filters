@@ -1,0 +1,47 @@
+<h1 class="text-center">Angular6: Custom Grid with Right side Filters</h1> 
+<div class="a11yCustomGrid">
+  <div class="container">
+<div class="row">
+  <div class="col-sm-9">
+    <table class="table table-bordered table-striped table-hover">
+      <tr class="headings">
+        <th *ngFor="let heading of tableHeading">{{heading}}</th>
+      </tr>
+      <tr *ngFor="let item of copyData">
+        <td *ngFor="let col of tableHeading">{{item[col]}}</td>
+      </tr>
+      <tr *ngIf="copyData.length==0">
+        <td [attr.colspan]="tableHeading.length"> <h3 class="norecords"> No Records found</h3></td>
+      </tr>
+    </table>
+  </div>
+  <div class="col-sm-3 filters">
+    <div class="col-sm-6">     <h3>Filters</h3>  </div>
+    <div class="col-sm-6 text-right">
+      <button (click)="getClear()" class="btn btn-warning">clear</button>
+    </div>
+    <div class="clearfix"></div>
+    <ul>
+      <li *ngFor="let theading of tableHeading">
+          <div >
+              <button class="btn btn-outline-primary" attr.id="dropdownBasic{{theading}}" (click)="defaultDropdown[theading].open=!defaultDropdown[theading].open">
+                <span class="glyphicon glyphicon-menu-down" [ngClass]="{'glyphicon-menu-up':defaultDropdown[theading].open}"></span>
+                {{theading}}
+              </button>
+                <ng-container *ngIf="defaultDropdown[theading].open">
+                  <ul>
+                    <li  *ngFor="let val of defaultDropdown[theading].values let i=index">
+                        <div class="input__checkbox"> 
+                          <input  class="input__checkbox--focus"  [checked]="defaultDropdown[theading].dropSelected==val" type="checkbox" attr.name="{{val}}" attr.id="checkBox{{i}}{{val}}" (change)="getVal(theading,val)"/> 
+                           <label attr.for="checkBox{{i}}{{val}}">&nbsp;</label>                           
+                        </div>
+                        {{val}}
+                    </li>
+                  </ul>
+                </ng-container>
+          </div>
+      </li>
+    </ul>
+  </div>
+</div>
+</div>
