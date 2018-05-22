@@ -8,7 +8,7 @@ https://github.com/venkatch668/Angluar6-CustomGrid-Filters.git
 
 ## Expected output 
 
-![Alt text](https://github.com/venkatch668/Angluar6-CustomGrid-Filters/blob/master/screenshot.JPG?raw=true  "screenshot")
+![Alt text](https://github.com/venkatch668/Angluar6-CustomGrid-Filters/blob/master/screenshot1.JPG?raw=true  "screenshot")
 
 
 
