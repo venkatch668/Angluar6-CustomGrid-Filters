@@ -22,44 +22,44 @@ export class CustomGridComponent implements OnInit {
 
     this.tableGrid = [
             {
-              'engagement': 'ramesh',
-              'gro': 'Open',
+              'name': 'ramesh',
+              'column': 'Open',
               'topic': 'Close',
               'sector':'retail',
-              'stc':'review',
-              'mark':'us'
+              'status':'review',
+              'country':'us'
             },
             {
-              'engagement': 'raghu',
-              'gro': 'Open1',
+              'name': 'raghu',
+              'column': 'Open1',
               'topic': 'Close1',
               'sector':'retail1',
-              'stc':'review1',
-              'mark':'us1'
+              'status':'review1',
+              'country':'us1'
             },
             {
-              'engagement': 'raghu',
-              'gro': 'Open3',
+              'name': 'raghu',
+              'column': 'Open3',
               'topic': 'Close3',
               'sector':'retail3',
-              'stc':'review3',
-              'mark':'us3'
+              'status':'review3',
+              'country':'us3'
             },
             {
-              'engagement': 'rajesh',
-              'gro': 'Open2',
+              'name': 'rajesh',
+              'column': 'Open2',
               'topic': 'Close2',
               'sector':'retail2',
-              'stc':'review2',
-              'mark':'us2'
+              'status':'review2',
+              'country':'us2'
             },
             {
-              'engagement': 'test',
-              'gro': 'Open1',
+              'name': 'test',
+              'column': 'Open1',
               'topic': 'Close1',
               'sector':'retail1',
-              'stc':'review1',
-              'mark':'us1'
+              'status':'review1',
+              'country':'us1'
             }
           ];
           this.copyData=this.tableGrid;
